@@ -5,10 +5,11 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
-const context = new window.AudioContext();
 
-function play_audio(){
-  console.log("BUTTON PRESSED")
+// const context = new window.AudioContext();
+
+// function play_audio(){
+//   console.log("BUTTON PRESSED")
 //     const successNoise = context.createOscillator();
 //     successNoise.frequency = "600";
 //     successNoise.type = "sine";
@@ -36,10 +37,10 @@ function play_audio(){
 //         .connect(context.destination);
 //     successNoise.start();
 //     successNoise.stop(context.currentTime + 0.2);
-}
+//}
 
 
-let submitButton = document.querySelector("#scroll");
-submitButton.addEventListener("click",function(){
-  play_audio()
-})
+// let submitButton = document.querySelector("#scroll");
+// submitButton.addEventListener("click",function(){
+//   play_audio()
+// })

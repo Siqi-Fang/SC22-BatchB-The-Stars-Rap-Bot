@@ -1,0 +1,3 @@
+{"backend_state":"init","connection_file":"/projects/ab6b9f32-4b18-411a-bce3-bf454bdd198d/.local/share/jupyter/runtime/kernel-2655f7fc-fd51-4eee-93b6-c575ca994c64.json","kernel":"nlp_env","kernel_error":"","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":0},"trust":true,"type":"settings"}
+{"exec_count":1,"id":"8e0b51","input":"cd omni_nlp/app\n","kernel":"nlp_env","output":{"0":{"name":"stdout","text":"[Errno 2] No such file or directory: 'omni_nlp/app'\n/projects/ab6b9f32-4b18-411a-bce3-bf454bdd198d/omni_nlp/app/static/audio\n"}},"pos":0,"state":"done","type":"cell"}
+{"last_load":1657866122041,"type":"file"}

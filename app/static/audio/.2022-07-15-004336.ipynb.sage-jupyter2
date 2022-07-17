@@ -1,0 +1,5 @@
+{"backend_state":"init","connection_file":"/projects/ab6b9f32-4b18-411a-bce3-bf454bdd198d/.local/share/jupyter/runtime/kernel-0f36963e-599c-402f-8e85-825705e3b2cc.json","kernel":"nlp_env","kernel_error":"","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":0},"metadata":{"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.8.13"}},"trust":true,"type":"settings"}
+{"cell_type":"code","exec_count":0,"id":"06d843","input":"/projects/ab6b9f32-4b18-411a-bce3-bf454bdd198d/omni_nlp/app/static/audio","pos":1,"type":"cell"}
+{"cell_type":"code","exec_count":1,"id":"ebd547","input":"cd path","output":{"0":{"name":"stdout","output_type":"stream","text":"[Errno 2] No such file or directory: 'path'\n/projects/ab6b9f32-4b18-411a-bce3-bf454bdd198d/omni_nlp/app/static/audio\n"}},"pos":0,"type":"cell"}
+{"id":0,"time":1657867558536,"type":"user"}
+{"last_load":1657905556657,"type":"file"}

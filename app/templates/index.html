@@ -34,9 +34,9 @@
         <header class="masthead text-center text-white">
             <div class="masthead-content">
                 <div class="container px-5">
-                    <h1 class="masthead-heading mb-0">Rap-Bot</h1>
-                    <h2 class="masthead-subheading mb-0">Generating lyrics so you don't have to</h2>
-                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Learn More</a>
+                  <h1 class="masthead-heading mb-0"> <FONT COLOR="#7c64d4"> Rap-Bot</FONT></h1>
+                    <h2 class="masthead-subheading mb-0">Generating lyrics for our supreme leader</h2>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Scroll for more</a>
                 </div>
             </div>
             <div class="bg-circle-1 bg-circle"></div>
@@ -49,12 +49,12 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static',filename="img/rap.jpg")}}  alt="..." /></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static',filename="img/Siqi_supreme.png")}}  alt="..." /></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4">What is Rap-Bot</h2>
-                            <p>We created an Artificial Intelligence that generate rap. It's name is Rap-bot.</p>
+                            <h2 class="display-1">What is <FONT COLOR="#7c64d4"> <b>Rap-Bot</b></FONT></h2>
+                          <p>We created an <FONT COLOR="#d46484"> <b> Artificial Intelligence </b> </FONT> that generate rap for our supreme leader (I'm running out of this to say so this will work for now, unless I never change this, then this will stay here until the end of time). <br> Our AI's name is <FONT COLOR="#7c64d4"> <b>Rap-bot</b></FONT>.</p>
                         </div>
                     </div>
                 </div>
@@ -62,15 +62,19 @@
         </section>
         <!-- Content section 2-->
         <section>
-            <div class="container px-5">
+            <div class="container px-1">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static',filename="img/Code.jpg")}} alt="..." /></div>
+                        <div class="p-3"><!--video width="160" height="120" controls-->
+  <img src={{url_for('static',filename="img/Methodology.gif")}}>
+<!--/video-->
+</div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="p-5">
+                        <div class="p-6">
                             <h2 class="display-4">How does it work?</h2>
-                            <p>idk lol</p>
+                          <p>Our workflow is defined by the following: <br> <br> <b> <FONT COLOR="#7c64d4"> User talks to chat bot</FONT> → <FONT COLOR="#d46484"> AI generates lyrics</FONT>  → <FONT COLOR="#64d4b4"> Outputs a song with lyrics. </FONT>  </b>
+ </p>
                         </div>
                     </div>
                 </div>
@@ -81,14 +85,12 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static',filename="img/03.jpg")}} alt="..." /></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static',filename="img/C3pmilo.png")}} alt="..." /></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
                             <h2 class="display-4">Our work flow</h2>
-To which our product needs to target a broad but specific audience, meaning something that can hook people.And this got us thinking- what if we had our user talk to a chat bot, and then print out lyrics that relate to the inputs the user 
-
-</p>
+                          To which our product needs to <b> target</b> a broad but specific audience<br> Our motto: We'll figure it out </p>
                         </div>
                     </div>
                 </div>
@@ -99,18 +101,60 @@ To which our product needs to target a broad but specific audience, meaning some
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static',filename="img/03.jpg")}} alt="..." /></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static',filename="img/Squidward_devin.png")}} alt="..." /></div>
 
                     </div>
                     <div class="col-lg-6">
                         <div class="p-5">
-                            <h2 class="display-4">Problems and approaches</h2>
-                            <p>Getting an AI to rap is no easy feat, naturally there will be problems that surface.</p>
+                            <h3 class="display-5">Sentiment Analysis</h3>
+                            <p>The purpose of the sentiment analysis is to give the Lyrics generation a prompt to work with, generated from user's input. However that input will be subconsciously derived from the user's emotions using sentiment analysis. NLTK and text2emotion were both used to check each word of the user's input and define an emotion based on the words. The results are outputted as an emotion. </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+  <!---Creating Lyrics Dataset---->
+          <section>
+            <div class="container p2x-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static',filename="img/Clone_greg.png")}} alt="..." /></div>
+
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h3 class="display-5">Generating Lyrics</h3>
+                            <p>Lyrics are generated via a custom Lyrics dataset utilizing the Genius API, and cleaned with custom parameters for unwanted words that appear in the file such as [Verse] as well as parameters such as [Embed]. We then use AI text gen to produce lyrics based on the custom dataset. Following that, we use Datamuse then to create rhymes of the end of sentences and using the Roberta neural network to generate words in between the original sentence and the rhymed last words to make the sentence make sense. Post processing, we removed swear words, as well as select 4 of the best lines that fit around 12 syllables. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!---Preprocessing Lyrics---->
+          <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static',filename="img/jar_jar_leo.png")}} alt="..." /></div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h3 class="display-5">Speech generation</h3>
+                            <p>After getting input from the Lyrics generator, we turned the lyrics into speech using Amazon Polly. Using SSML tags, we will be able to select from a variety of AI voices and influence the speed in which the AI raps the lyrics. Due to time and current technology constraints, we were not able to make the AI rap in different "flows", due to unstable syllable counting APIs currently existing. Thus we had to default to the AI rapping the lyrics relatively to the beat of the music.</p>
+                        </div>
+                    <div class="col-lg-6 order-lg-1">
+                </div>
+            </div>
+        </section>
+
+           <!--slideshow-->
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRTWIwzdwtq5GJEU-cYX6RTv_lqVWsTDgTeUzmS1lHRER4SpwsyEarjlJiOCv7BcEIBSlK4ZmZkSSet/embed?start=false&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              </div>
+            </div>
+
         <!-- Footer-->
         <footer class="py-5 bg-black">
             <div class="container px-5"><p class="m-0 text-center text-white small">Website template provided by Start Bootstrap</p></div>

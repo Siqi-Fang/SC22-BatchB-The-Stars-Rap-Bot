@@ -25,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href={{url_for("results")}}>DEMO</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" style="color: #0d6efd">Meet the team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" style="color: #7c64d4">Meet the team</a></li>
                     </ul>
                 </div>
             </div>
@@ -34,7 +34,7 @@
         <header class="masthead text-center text-white">
             <div class="masthead-content">
                 <div class="container px-5">
-                    <h1 class="masthead-heading mb-0">Meet the team</h1>
+                    <h1 class="masthead-heading mb-0"><FONT COLOR="#7c64d4">Meet the team</FONT></h1>
                     <h2 class="masthead-subheading mb-0">The creators of this product</h2>
                 </div>
             </div>
@@ -43,16 +43,29 @@
             <div class="bg-circle-3 bg-circle"></div>
             <div class="bg-circle-4 bg-circle"></div>
         </header>
+      <!--Intro tags-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                        <div class="p-5">
+                          <p> *Tags on this page: ML = Machine learning engineer; DS = Data Scientist; Front End Developer = FE; Back End Developer = BE; PM = Product Manager <br> **What projects the individual worked on: Chatbot = CB; Lyrics generation = LG; Speech Generation = SG; </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
         <!-- Content section 1-->
         <section id="scroll">
-            <div class="container px-5">
+            <div class="container px-1">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
                         <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static', filename="/img/Vincent.JPG")}} alt="no picture" /></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4">Vincent Yang</h2>
+                          <h2 class="display-4">Vincent Yang</h2>
+                          <h3> PM, ML, DS, FE, LG, SG </h3>
                             <p>Hi, my name is Vincent Yang, I will attend Northwestern University in the fall 2022, and is planning to major in Computer science while getting certificates in integrated marketing communications and managerial analytics.</p>
                         </div>
                     </div>
@@ -61,7 +74,7 @@
         </section>
         <!-- Content section 2-->
         <section>
-            <div class="container px-5">
+            <div class="container px-1">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
                         <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static', filename= "/img/Leo.jpg")}} alt="..." /></div>
@@ -69,6 +82,7 @@
                     <div class="col-lg-6">
                         <div class="p-5">
                             <h2 class="display-4">Leonardo Masini Aleman</h2>
+                            <h3> ML, DS, FE, LG Lead </h3>
                             <p>I am living in Arizona and moved here from Mexico when I was 11. As suggested from this project my main hobby is coding, I am also passionate about running and math.</p>
                         </div>
                     </div>
@@ -77,7 +91,7 @@
         </section>
         <!-- Content section 3-->
         <section>
-            <div class="container px-5">
+            <div class="container px-1">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
                         <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static', filename="/img/Greg.jpg")}} alt="..." /></div>
@@ -85,6 +99,7 @@
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
                             <h2 class="display-4">Greg Chu</h2>
+                            <h3> DS, ML, CB Lead </h3>
                             <p>Hi, my name is Greg Chu, and I am from San Jose, California. I have always found the area of engineering to be interesting, whether it be coding, or understanding how machines work. My hobbies are cooking, and also playing sports.
 </p>
                         </div>
@@ -94,7 +109,7 @@
         </section>
         <!-- Content section 4-->
         <section>
-            <div class="container px-5">
+            <div class="container px-1">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
                         <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static', filename = "/img/Devin.jpg")}} alt="..." /></div>
@@ -102,6 +117,7 @@
                     <div class="col-lg-6">
                         <div class="p-5">
                             <h2 class="display-4">Devin Harris</h2>
+                            <h3> FE Lead, SG </h3>
                             <p>Hey, my name is Devin Harris and I will be attending University of Washington in the spring of 2023 as I aspire to major in Computer Science while studying German. My hobbies are playing the piano/guitar and drawing</p>
                         </div>
                     </div>
@@ -110,7 +126,7 @@
         </section>
         <!-- Content section 5-->
         <section>
-            <div class="container px-5">
+            <div class="container px-1">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
                         <div class="p-5"><img class="img-fluid rounded-circle" src= {{url_for('static', filename = "/img/Emilio.jpg")}} alt="..." /></div>
@@ -118,6 +134,7 @@
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
                             <h2 class="display-4">Emilio Lim</h2>
+                            <h3> BE lead, SG </h3>
                             <p>I am a highschool senior at Montevista Highschool and plan to major in either robotics engineering or computer science. My favourite hobbies are drawing and reading.</p>
                         </div>
                     </div>
@@ -126,15 +143,16 @@
         </section>
          <!-- Content section 6-->
          <section>
-            <div class="container px-5">
+            <div class="container px-1">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static', filename = "/img/Code.jpg")}} alt="..." /></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static', filename = "/img/Jennifer.png")}} alt="..." /></div>
                     </div>
                     <div class="col-lg-6">
                         <div class="p-5">
                             <h2 class="display-4">Jennifer Gutierrez</h2>
-                            <p>Jennifer</p>
+                            <h3> Computer Scientist </h3>
+                            <p>Hi my name is Jennifer, I really enjoy coding and computer science. I will be a senior in high school next year. Hobbies include coding and computer science.</p>
                         </div>
                     </div>
                 </div>
@@ -142,7 +160,7 @@
         </section>
         <!-- Content section 7-->
         <section>
-            <div class="container px-5">
+            <div class="container px-1">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
                         <div class="p-5"><img class="img-fluid rounded-circle" src={{url_for('static', filename = "/img/Siqi.png")}} alt="..." /></div>
@@ -150,7 +168,9 @@
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
                             <h2 class="display-4">Siqi Fang</h2>
-                            <p>The best instructor in the world!</p>
+                            <h3> Supreme Leader </h3>
+                            <p>Hi, I work as a lead Data Science Intern @AI-Camp. Currently studying Math & Computer Science at Hamilton College. <br> <br>
+(also supreme leader of the stars clones- never forget when you read this, Siqi, - FE developers)</p>
                         </div>
                     </div>
                 </div>
