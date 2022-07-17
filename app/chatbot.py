@@ -591,8 +591,8 @@ def create_mp3_files(inp_lyrics, bpm_of_song):
         syllables.append(total_syllables(line))
 
     polly_client = boto3.Session(
-            aws_access_key_id= 'AKIAY5UARKISBM6CN5OI',
-            aws_secret_access_key='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', #CHANGE THIS SO VINCENT DOESN'T GET CHARGED o_O
+            aws_access_key_id= '',
+            aws_secret_access_key='', #CHANGE THIS SO VINCENT DOESN'T GET CHARGED o_O
             region_name='us-west-2').client('polly')
 
     for i in range(4): 
